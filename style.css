@@ -43,6 +43,27 @@ nav{
     box-shadow: 0 5px 50px hsla(0, 0%, 0%, 0.1);
 }
 
+.link a{
+    position: relative;
+    padding-bottom: 1px;
+    color: black;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #5e3bee;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 100%;
+}
+
 nav .logo, footer .logo{
     display: flex;
     align-items: center;
