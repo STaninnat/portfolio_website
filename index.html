@@ -16,11 +16,11 @@
             <img src="images/halloween_ghost.png" alt="Halloween Ghost">
         </div>
         <ul>
-            <li><a href="#main">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="Pricing">Pricing</a></li>
+            <li id="link1"><a href="#main">Home</a></li>
+            <li id="link2"><a href="#skills">Skills</a></li>
+            <li id="link3"><a href="#about">About Me</a></li>
+            <li id="link4"><a href="#portfolio">Portfolio</a></li>
+            <li id="link5"><a href="#pricing">Pricing</a></li>
         </ul>
         <button>Contact Me</button>
         <button id="menuButton" onclick="openMenu()">
@@ -87,7 +87,7 @@
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="left">
             <img src="images/knight_dragon.jpg" alt="Knight encounter a dragon">
         </div>
@@ -106,7 +106,7 @@
         </div>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="header">
             <div class="info">
                 <h5>Recent Project</h5>
@@ -114,40 +114,146 @@
             </div>
             <button><i class="fa-brands fa-github-alt"></i> Visit My GitHub</button>
         </div>
-        <div class="portfo-items">
+        <div class="portfolio-items">
             <div class="item">
                 <img src="images/Portfo_static.JPG" alt="Project static website">
-                <h4>Portfolio #3</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus beatae omnis, laboriosam
-                    libero, accusantium aliquid, sapiente ab ipsa facere amet vitae. Sapiente adipisci laudantium vero
-                    enim ex ad impedit.
-                </p>
-                <a href="#">View in GitHub <i class="fa-solid fa-link"></i></a>
+                <div class="info">
+                    <h4>Portfolio #3</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus beatae omnis, laboriosam
+                        libero, accusantium aliquid, sapiente ab ipsa facere amet vitae. Sapiente adipisci laudantium vero
+                        enim ex ad impedit.
+                    </p>
+                    <a href="#">View in GitHub <i class="fa-solid fa-link"></i></a>
+                </div>
             </div>
             <div class="item">
-                <img src="images/Portfo_static.JPG" alt="Project static website">
-                <h4>Portfolio #3</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus beatae omnis, laboriosam
-                    libero, accusantium aliquid, sapiente ab ipsa facere amet vitae. Sapiente adipisci laudantium vero
-                    enim ex ad impedit.
-                </p>
-                <a href="#">View in GitHub <i class="fa-solid fa-link"></i></a>
+                <img src="images/static_site_gen.JPG" alt="Project static site generator">
+                <div class="info">
+                    <h4>Project Static Site Generator</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus beatae omnis, laboriosam
+                        libero, accusantium aliquid, sapiente ab ipsa facere amet vitae. Sapiente adipisci laudantium vero
+                        enim ex ad impedit.
+                    </p>
+                    <a href="#">View in GitHub <i class="fa-solid fa-link"></i></a>
+                </div>
             </div>
             <div class="item">
-                <img src="images/Portfo_static.JPG" alt="Project static website">
-                <h4>Portfolio #3</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus beatae omnis, laboriosam
-                    libero, accusantium aliquid, sapiente ab ipsa facere amet vitae. Sapiente adipisci laudantium vero
-                    enim ex ad impedit.
-                </p>
-                <a href="#">View in GitHub <i class="fa-solid fa-link"></i></a>
+                <img src="images/mazesolver.JPG" alt="Project static website">
+                <div class="info">
+                    <h4>Project Maze Solver</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus beatae omnis, laboriosam
+                        libero, accusantium aliquid, sapiente ab ipsa facere amet vitae. Sapiente adipisci laudantium vero
+                        enim ex ad impedit.
+                    </p>
+                    <a href="#">View in GitHub <i class="fa-solid fa-link"></i></a>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="pricing" id="pricing">
+        <div class="header">Project Pricing Plans</div>
+        <p class="sub-header">
+            This pricing plans come with various membership tiers and it's just demo. 
+        </p>
+        <div class="pricing-items">
+            <div class="card">
+                <div class="content">
+                    <h4>Villager Tier</h4>
+                    <h3>0 $</h3>
+                    <p>
+                        <i class="fa-regular fa-square-check"></i>
+                        Starting Money: 100 BUX
+                    </p>
+                    <p>
+                        <i class="fa-regular fa-square-check"></i>
+                        Starting Item: Sickle
+                    </p>
+                </div>
+                <button class="btn">Join Now</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Knight Tier</h4>
+                    <h3>100 $</h3>
+                    <p>
+                        <i class="fa-regular fa-square-check"></i>
+                        Starting Money: 1000 BUX
+                    </p>
+                    <p>
+                        <i class="fa-regular fa-square-check"></i>
+                        Starting Item: Iron Sword
+                    </p>
+                    <p>
+                        <i class="fa-regular fa-square-check"></i>
+                        Strength: 100
+                    </p>
+                </div>
+                <button class="btn">Join Now</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>King Tier</h4>
+                    <h3>10000 $</h3>
+                    <p>
+                        <i class="fa-regular fa-square-check"></i>
+                        Starting Money: 100000 BUX
+                    </p>
+                    <p>
+                        <i class="fa-regular fa-square-check"></i>
+                        Starting Item: Dimond Crown
+                    </p>
+                    <p>
+                        <i class="fa-regular fa-square-check"></i>
+                        Strength: 500
+                    </p>
+                    <p>
+                        <i class="fa-regular fa-square-check"></i>
+                        Intelligent: 500
+                    </p>
+                </div>
+                <button class="btn">Join Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="top">
+            <div class="logo">
+                <img src="images/halloween_ghost.png" alt="Halloween Ghost">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Report</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="bottom">
+            <p>
+                May The Force be with You ⚔
+            </p>
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Setting</a>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        Copyright © 2024 STaninnat. All Rights Reserved.
+    </div>
     <script src="script.js"></script>
 </body>
 
