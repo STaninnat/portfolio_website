@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(240, 6%, 10%);
+    transition: color 0.3s ease;
+}
+
+a:hover{
+    color: hsl(240, 100%, 30%) !important;
+}
+
+h5{
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 5px 50px hsla(0, 0%, 0%, 0.1);
+}
+
+nav .logo, footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img, footer .logo img{
+    width: 50px;
+    height: 50px;
+}
+
+nav ul, footer .top ul{
+    display: flex;
+    gap: 100px;
+}
+
+nav button{
+    color: hsl(240, 6%, 10%);
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid hsl(240, 6%, 10%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover{
+    background-color: hsl(240, 100%, 30%);
+    border-color: hsl(240, 100%, 30%);
+    color:hsl(0, 0%, 100%);
+}
+
+nav button#menuButton{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+
+.main{
+    background-color: #deebee;
+    padding: 90px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main .left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .left h3{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.main .left p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.main .left button{
+    margin-top: 40px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.main .right img{
+    width: 600px;
+}
+
+.skills{
+    padding: 110px 100px 0;
+}
+
+.skills h3, .about .right h3, .portfolio .header h3, .pricing h3{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.skills .skill-items{
+    display: flex;
+    margin-top: 70px;
+    gap: 40px;
+}
+
+.skills .skill-items .item{
+    background-color: #deebee;
+    width: 25%;
+    border-radius: 10px;
+    padding: 32px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skills .skill-items .item:hover{
+    border-color: #5e3bee;
+}
+
+.skills .skill-items .item .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 opx 16px hsla(0, 0%, 0%, 0.1);
+}
+
+.skills .skill-items .item .icon i{
+    font-size: 26px;
+    color: red;
+}
+
+.skills .skill-items .item h4, .portfolio .portfolio-items .item .info h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skills .skill-items .item p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.about{
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about .left img{
+    width: 440px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.about .right p{
+    font-size: 16px;
+    margin-top: 30px;
+}
