@@ -13,6 +13,12 @@ html{
     font-style: normal;
 }
 
+body{
+    background-color: hsl(240, 6%, 10%);
+}
+
+/**************************************************** NAV ****************************************************/
+
 a{
     text-decoration: none;
     color: hsl(240, 6%, 10%);
@@ -20,11 +26,13 @@ a{
 }
 
 a:hover{
-    color: hsl(240, 100%, 30%) !important;
+    color: hsl(240, 70%, 15%) !important;
 }
 
-h5{
-    font-size: 20px;
+h2{
+    font-size: 60px;
+    color: #fff;
+    font-weight: 800;
 }
 
 li{
@@ -32,7 +40,7 @@ li{
 }
 
 nav{
-    background-color: #fff;
+    background-color: hsl(191, 32%, 90%, 0.975);
     position: sticky;
     top: 0;
     padding: 0 100px;
@@ -40,13 +48,14 @@ nav{
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    box-shadow: 0 5px 50px hsla(0, 0%, 0%, 0.1);
+    box-shadow: 0 5px 50px hsla(0, 0%, 100%, 0.555);
 }
 
 .link a{
     position: relative;
-    padding-bottom: 1px;
-    color: black;
+    padding-bottom: 4px;
+    font-size: 1.1rem;
+    font-weight: 900;
 }
 
 .link a::after{
@@ -56,17 +65,18 @@ nav{
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #5e3bee;
+    background-color: hsl(240, 70%, 15%);
     transition: all 0.3s ease;
 }
 
 .link a:hover::after{
-    width: 100%;
+    width: 80%;
 }
 
 nav .logo, footer .logo{
     display: flex;
     align-items: center;
+    filter: drop-shadow(5px 5px 5px black);
 }
 
 nav .logo img, footer .logo img{
@@ -81,18 +91,19 @@ nav ul, footer .top ul{
 }
 
 nav button{
+    font-weight: 900;
     color: hsl(240, 6%, 10%);
     background-color: transparent;
     padding: 12px 16px;
     border-radius: 5px;
-    border: 1px solid hsl(240, 6%, 10%);
+    border: 4px solid hsl(240, 6%, 10%);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 nav button:hover{
-    background-color: hsl(240, 100%, 30%);
-    border-color: hsl(240, 100%, 30%);
+    background-color: hsl(240, 70%, 15%);
+    border-color: hsl(240, 70%, 15%);
     color:hsl(0, 0%, 100%);
 }
 
@@ -104,13 +115,15 @@ nav button#menuButton{
     padding: 7px;
 }
 
+/**************************************************** MAIN(HOME) ****************************************************/
+
 .main{
-    background-color: #deebee;
-    padding: 90px 100px;
+    padding: 100px 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
+    color: hsl(0, 0%, 100%);
 }
 
 .main .left{
@@ -119,15 +132,22 @@ nav button#menuButton{
     align-items: start;
 }
 
+.main .left h2 span{
+    font-size: 70px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
 .main .left h3{
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .main .left p{
+    max-width: 1000px;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .main .left button{
@@ -140,36 +160,40 @@ nav button#menuButton{
 }
 
 .main .right img{
-    width: 600px;
+    margin-top: 90px;
+    width: 650px;
 }
 
+/**************************************************** SKILLS ****************************************************/
+
 .skills{
-    padding: 110px 100px 0;
+    padding: 150px 100px 100px;
 }
 
 .skills h3, .about .right h3, .portfolio .header h3{
-    font-size: 42px;
+    color: #fff;
+    font-size: 40px;
     margin-top: 20px;
 }
 
 .skills .skill-items{
     display: flex;
-    margin-top: 70px;
+    margin-top: 80px;
     gap: 40px;
 }
 
 .skills .skill-items .item{
-    background-color: #deebee;
+    background-color: hsl(191, 32%, 90%);
     width: 25%;
     border-radius: 10px;
     padding: 32px;
-    border-bottom: 4px solid transparent;
-    cursor: pointer;
+    border-bottom: 7px solid transparent;
+    cursor:crosshair;
     transition: all 0.3s ease;
 }
 
 .skills .skill-items .item:hover{
-    border-color: #5e3bee;
+    border-color: hsl(191, 70%, 55%);
 }
 
 .skills .skill-items .item .icon{
@@ -186,22 +210,29 @@ nav button#menuButton{
 
 .skills .skill-items .item .icon i{
     font-size: 26px;
-    color: red;
+    color: hsl(240, 6%, 10%);
 }
 
 .skills .skill-items .item h4, .portfolio .portfolio-items .item .info h4{
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.skills .skill-items .item h5{
+    margin-top: 20px;
     font-weight: bold;
 }
 
 .skills .skill-items .item p{
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 14px;
     line-height: 22px;
 }
 
+/**************************************************** ABOUT ****************************************************/
+
 .about{
-    padding: 110px;
+    padding: 150px 100px;
     display: flex;
     align-items: center;
     gap: 60px;
@@ -214,24 +245,27 @@ nav button#menuButton{
 }
 
 .about .right p{
+    color: #fff;
     font-size: 16px;
     margin-top: 30px;
+    margin-left: 20px;
 }
 
+/**************************************************** PORTFOLIO ****************************************************/
+
 .portfolio{
-    background-color: #deebee;
-    padding: 110px 100px;
+    padding: 130px 100px;
 }
 
 .portfolio .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
-.portfolio .header button{
-    background-color: red;
+.portfolio .header button, .portfolio .header a{
+    background-color: hsl(258, 55%, 45%);
     padding: 10px 20px;
     color: #fff;
     display: flex;
@@ -254,16 +288,16 @@ nav button#menuButton{
 
 .portfolio .portfolio-items .item{
     width: 30%;
-    background-color: #fff;
+    background-color: hsl(191, 32%, 90%);
     border-radius: 10px;
-    border-bottom: 4px solid transparent;
+    border-bottom: 7px solid transparent;
     cursor: pointer;
     box-shadow: 0 5px 32px hsla(0, 0%, 0%, 0.15);
     transition: all 0.3s ease;
 }
 
 .portfolio .portfolio-items .item:hover{
-    border-color: red;
+    border-color: hsl(191, 70%, 55%);
 }
 
 .portfolio .portfolio-items .item img{
@@ -282,7 +316,7 @@ nav button#menuButton{
 }
 
 .portfolio .portfolio-items .item .info p{
-    font-size: 13px;
+    font-size: 18px;
 }
 
 .portfolio .portfolio-items .item .info a{
@@ -296,19 +330,23 @@ nav button#menuButton{
     font-size: 16px;
 }
 
+/**************************************************** PRICING ****************************************************/
+
 .pricing{
-    padding: 100px 100px;
+    padding: 120px 100px;
 }
 
 .pricing .header{
-    margin-bottom: 20px;
+    color: #fff;
+    margin-bottom: 30px;
     text-align: center;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 60px;
+    font-weight: 800;
 }
 
 .pricing .sub-header{
-    font-size: 28px;
+    color: #fff;
+    font-size: 26px;
     max-width: 1000px;
     margin: auto;
     text-align: center;
@@ -323,7 +361,7 @@ nav button#menuButton{
 
 .pricing .card{
     padding: 20px 60px;
-    background-color: #5e3bee;
+    background-color: hsl(252, 84%, 58%);
     display: flex;
     flex-direction: column;
     border: 2px solid transparent;
@@ -332,7 +370,7 @@ nav button#menuButton{
 }
 
 .pricing .card:hover{
-    background-color: aqua;
+    background-color: hsl(252, 94%, 48%);
     border-color: #fff;
 }
 
@@ -374,7 +412,7 @@ nav button#menuButton{
     color: #fff;
     background-color: transparent;
     border: 3px solid #fff;
-    padding: 20px;
+    padding: 10px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -385,8 +423,10 @@ nav button#menuButton{
     cursor: pointer;
 }
 
+/**************************************************** FOOTER ****************************************************/
+
 footer{
-    background-color: #deebee;
+    background-color: hsl(191, 32%, 90%);
     padding: 85px;
     display: flex;
     flex-direction: column;
@@ -422,13 +462,15 @@ footer .bottom .links a{
 }
 
 .copyright{
-    background-color: #deebee;
+    background-color: hsl(191, 32%, 90%);
     margin: auto;
     padding: 5px;
     color: black;
     font-size: 14px;
     text-align: center;
 }
+
+/**************************************************** MEDIA SCREEN ****************************************************/
 
 @media screen and (max-width: 1200px) {
     nav ul, footer .top ul{
@@ -459,7 +501,7 @@ footer .bottom .links a{
     }
 
     .skills .skill-items .item{
-        width: 50%;
+        width: 100%;
     }
 
     .about .left img{
