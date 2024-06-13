@@ -1,4 +1,4 @@
-# portfolio_website
+# Portfolio Website
 
 Project for personal portfolio website
 
@@ -10,5 +10,5 @@ This is a **personal portfolio website** by using basic of HTML, CSS and JS.
 
 ---Let's start it---
 1. Dowload this project.
-2. run 'index.html'
-* Can run by Extensions -> Live Server or Web Preview
+2. run 'index.html' file.
+    * Can run by Extensions -> Live Server or Web Preview.
