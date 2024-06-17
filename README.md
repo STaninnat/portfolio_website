@@ -2,9 +2,9 @@
 
 Project for personal portfolio website
 
-Contains with HTML, CSS and JS.
+Contains HTML, CSS and JS.
 
-This is a **personal portfolio website** by using basic of HTML, CSS and JS. 
+This is a **personal portfolio website** using basic HTML, CSS and JS. 
 
 ----------------------------------------------------------------------------------
 
@@ -13,7 +13,7 @@ This is a **personal portfolio website** by using basic of HTML, CSS and JS.
 2. run 'index.html' file.
     * Can run by Extensions -> Live Server or Web Preview.
 
-## 🤝 Contributing
+## 🤝 Guideline
 
 ### Clone the repo
 
