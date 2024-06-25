@@ -9,7 +9,7 @@ This is a **personal portfolio website** using basic HTML, CSS and JS.
 ----------------------------------------------------------------------------------
 
 ---Let's start it---
-1. Clone this project.
+1. Clone this repository.
 2. run 'index.html' file.
     * Can run by Extensions -> Live Server or Web Preview.
 
